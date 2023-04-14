@@ -13,7 +13,6 @@ public class StringSmartList {
   }
 
   public void add(String text) {
-
     String[] newStringArray = new String[this.totalStrings + 1];
 
     for (int i = 0; i < this.stringArray.length; i++) {
@@ -21,7 +20,14 @@ public class StringSmartList {
     }
 
     newStringArray[this.totalStrings] = text;
+    this.stringArray = newStringArray;
     this.totalStrings++;
+  }
+
+  public void display() {
+    for (String string : this.stringArray) {
+      System.out.println("-> " + string);
+    }
   }
 
   

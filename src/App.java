@@ -8,5 +8,7 @@ public class App {
         stringList.add("Que tal?");
         stringList.add("Todo bien");
 
+        stringList.display();
+
     }
 }
