@@ -5,5 +5,12 @@ package net.salesianos.utils;
  */
 public class StringSmartList {
 
+  private String[] stringArray;
+
+  public StringSmartList() {
+    this.stringArray = new String[1];
+  }
+
+  
   
 }
