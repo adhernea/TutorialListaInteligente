@@ -84,5 +84,16 @@ public class StringSmartList {
 
   }
 
+  public String get(int position) {
+    if (position >= totalStrings) {
+      System.out.println("El array no tiene aun esa posición");
+      return null;
+    } else if (position < 0) {
+      System.out.println("No acepto posiciones negativas");
+      return null;
+    }
+
+    return this.stringArray[position];
+  }
   
 }
