@@ -20,8 +20,11 @@ public class App {
         stringList.display();
         
         // stringList.remove("Que tal?");
-        stringList.delete(2);
+        stringList.delete(3);
         stringList.display();
+
+        System.out.println("Se ha buscado y encontrado: " + stringList.search("pibe"));
+        System.out.println("Se ha buscado: " + stringList.search("palabra"));
 
     }
 }

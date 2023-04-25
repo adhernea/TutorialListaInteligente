@@ -120,5 +120,19 @@ public class StringSmartList {
     this.stringArray = newStringArray;
     this.totalStrings = totalElements;
   }
-  
+
+  public String search(String text) {
+
+    if (text == null) {
+      return null;
+    }
+
+    for (String string : stringArray) {
+      if (text.equals(string)) {
+        return string;
+      }
+    }
+
+    return null;
+  }
 }
