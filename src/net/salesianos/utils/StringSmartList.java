@@ -135,4 +135,8 @@ public class StringSmartList {
 
     return null;
   }
+
+  public int length() {
+    return this.totalStrings;
+  }
 }
