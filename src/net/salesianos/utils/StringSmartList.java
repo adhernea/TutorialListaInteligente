@@ -95,5 +95,30 @@ public class StringSmartList {
 
     return this.stringArray[position];
   }
+
+  public void delete(int position) {
+
+    int totalElements = 0;
+    for (int i = 0; i < this.stringArray.length; i++) {
+      if (i == position){
+        this.stringArray[i] = null;
+      } else {
+        totalElements++;
+      }
+    }
+    
+    String[] newStringArray = new String[totalElements];
+    int newArrayIndex = 0;
+  
+    for (int i = 0; i < this.stringArray.length; i++) {
+      if (this.stringArray[i] != null){
+        newStringArray[newArrayIndex] = this.stringArray[i];
+        newArrayIndex++;
+      }
+    }
+
+    this.stringArray = newStringArray;
+    this.totalStrings = totalElements;
+  }
   
 }

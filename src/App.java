@@ -20,7 +20,8 @@ public class App {
         stringList.display();
         
         // stringList.remove("Que tal?");
-        // stringList.display();
+        stringList.delete(2);
+        stringList.display();
 
     }
 }
