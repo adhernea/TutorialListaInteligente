@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
+import net.salesianos.utils.SmartList;
 import net.salesianos.utils.StringSmartList;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Scanner scanner = new Scanner(System.in);
-
-        StringSmartList stringList = new StringSmartList();
+        SmartList<String> stringList = new SmartList<>();
         stringList.add("Hola");
         stringList.add("Que tal?");
         stringList.add("Que tal?");
