@@ -15,8 +15,12 @@ public class App {
 
         stringList.display();
         
-        stringList.remove("Que tal?");
+        stringList.insert("pibe", 1);
+        stringList.insert("Adios", 0);
         stringList.display();
+        
+        // stringList.remove("Que tal?");
+        // stringList.display();
 
     }
 }

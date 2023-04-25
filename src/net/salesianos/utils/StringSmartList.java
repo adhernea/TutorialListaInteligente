@@ -56,5 +56,33 @@ public class StringSmartList {
     }
   }
 
+  public void insert(String text, int position) {
+
+    if (position >= totalStrings) {
+      System.out.println("El array no tiene aun esa posición");
+      return;
+    } else if (position < 0) {
+      System.out.println("No acepto posiciones negativas");
+      return;
+    }
+
+    String[] newStringArray = new String[this.totalStrings + 1];
+
+    for (int i = 0; i < this.stringArray.length; i++) {
+      if (i < position) {
+        newStringArray[i] = this.stringArray[i];
+      } else if (i == position) {
+        newStringArray[i] = text;
+        newStringArray[i+1] = this.stringArray[i];
+      } else {
+        newStringArray[i+1] = this.stringArray[i];
+      }
+    }
+
+      totalStrings++;
+      this.stringArray = newStringArray;
+
+  }
+
   
 }
